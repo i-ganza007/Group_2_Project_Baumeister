@@ -1,31 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Website project template</title>
-</head>
-<script>
-    const loadComponents = (id, url) =>  {
-        fetch(url)
+  </head>
+  <script>
+    const loadComponents = (id, url) => {
+      fetch(url)
         .then((response) => response.text())
         .then((html) => {
-            document.getElementById(id).innerHTML = html;
+          document.getElementById(id).innerHTML = html;
         });
-    }
+    };
 
     window.onload = () => {
-        loadComponents('header', 'src/sections/header.html');
-        loadComponents('hero', 'src/sections/hero.html');
-        loadComponents('contact', 'src/sections/contact.html');
-        loadComponents('footer', 'src/sections/footer.html');
-    }
-</script>
-<body>
+      loadComponents('header', 'src/sections/header.html');
+      loadComponents('hero', 'src/sections/hero.html');
+      loadComponents('contact', 'src/sections/contact.html');
+      loadComponents('footer', 'src/sections/footer.html');
+      loadComponents('services', 'src/sections/services.html');
+    };
+  </script>
+  <body>
     <div id="header"></div>
     <div id="hero"></div>
+    <div class="bg-[EFECEA] w-full py-20">
+      <section
+        class="mx-auto max-w-7xl w-full flex flex-col md:flex-row justify-evenly items-start"
+      >
+        <div className="w-1/2 flex gap-10 w-full">
+          <p
+            class="text-black text-2xl md:text-4xl pl-4 md:pl-0 py-6 max-w-2/3"
+          >
+            Brand strategy
+          </p>
+          <p
+            class="text-black text-2xl md:text-4xl pl-4 md:pl-0 py-6 max-w-2/3"
+          >
+            Corporate Identity & Website development
+          </p>
+          <p
+            class="text-black text-2xl md:text-4xl pl-4 md:pl-0 py-6 max-w-2/3"
+          >
+            SEO & copywriting
+          </p>
+          <p
+            class="text-black text-2xl md:text-4xl pl-4 md:pl-0 py-6 max-w-2/3"
+          >
+            Media Relations
+          </p>
+          <p
+            class="text-black text-2xl md:text-4xl pl-4 md:pl-0 py-6 max-w-2/3"
+          >
+            Digital marketing & content production
+          </p>
+          <p
+            class="text-black text-2xl md:text-4xl pl-4 md:pl-0 pt-6 max-w-2/3"
+          >
+            Influencer relations
+          </p>
+        </div>
+        <div className="md:w-1/2 w-full">
+          <div
+            class="size-72 md:size-96 mt-10 mb-24 md:mb-0 ml-10 md:ml-0 relative"
+          >
+            <img src="./src/images/green-vector.svg" alt="vector-svg" />
+            <p
+              class="text-white text-sm md:text-base top-1/5 md:top-1/3 left-[10%] text-[#EFECEA] absolute transform -translate-x-1/2 -translate-y-1/2 p-6"
+            >
+              Our strategic approach is a collaborative journey that starts with
+              analysing the initial situation and leads to messages that cut
+              through the information overload. We take care of content
+              production and maintain relationships with multipliers to position
+              your brand in the best possible way. From analysis to
+              implementation, we accompany you every step of the way, ensuring
+              that every measure is effective.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
     <div id="contact"></div>
     <div id="footer"></div>
-</body>
+  </body>
 </html>
