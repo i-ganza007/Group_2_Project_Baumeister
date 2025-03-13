@@ -568,3 +568,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
 }
+
+@media (min-width: 640px) {
+  .sm\:mr-20 {
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .md\:mr-36 {
+    margin-right: 9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mr-36 {
+    margin-right: 9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mr-36 {
+    margin-right: 9rem;
+  }
+}
