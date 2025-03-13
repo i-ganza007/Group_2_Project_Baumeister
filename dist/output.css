@@ -467,3 +467,104 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.mr-20 {
+  margin-right: 5rem;
+}
+
+.mr-36 {
+  margin-right: 9rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[3500px\] {
+  height: 3500px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-\[1512\] {
+  width: 1512;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\/images\/yellow\.png\'\)\] {
+  background-image: url('./images/yellow.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/yellow\.png\'\)\] {
+  background-image: url('../images/yellow.png');
+}
+
+.bg-\[url\(\'\/images\/yellow\.png\'\)\] {
+  background-image: url('/images/yellow.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
