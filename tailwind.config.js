@@ -1,10 +1,15 @@
 module.exports = {
   content: [
-    "./index.html",  // If you have a single index.html
-    "./src/**/*.html" // If you have multiple HTML files inside a 'src' folder
+    "./index.html",  
+    "./src/**/*.html", 
+    "./src/**/*.{js,ts,jsx,tsx}", 
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'iphone': {'max':'430px'}, 
+      },
+    },
   },
   plugins: [],
 };
