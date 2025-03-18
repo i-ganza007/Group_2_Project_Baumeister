@@ -776,6 +776,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
