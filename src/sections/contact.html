@@ -1,5 +1,5 @@
 <section>
-    <div class="pt-10 flex px-4 py-4 justify-between items-center text-[#00672E] md:pt-4 md:px-8 ">
+    <div class="pt-10 flex px-4 py-4 justify-between items-center text-imprint-green md:pt-4 md:px-8 ">
         <div class="lg:text-sm flex flex-col items-start justify-center h-full mb-7">
             <p>DE</p>
             <p>EN</p>
@@ -13,7 +13,7 @@
             <a href="#">References</a>
             <a href="#">Contact</a>
         </div>
-        <div class="pt-2 lg:hidden text-[#00672E]">
+        <div class="pt-2 lg:hidden text-imprint-green">
             <svg width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.10811 2.11842L0 12.1053L8.64865 21.3493L31.5135 23L39 12.0227L28 0L1.10811 2.11842Z" fill="black"/>
                 <line x1="10" y1="6" x2="26" y2="6" stroke="#EFECEA" stroke-width="2"/>
@@ -39,8 +39,8 @@
         </div>
     </div>
 </section>
-
-<section class="text-[#00672E] flex justify-around gap-10">
+<!-- Main Content Desktop -->
+<section class="text-imprint-green hidden md:flex justify-around gap-10">
     <div>
         <p class="font-semibold text-xl">IMPRINT</p>
         <div class="flex flex-col gap-20 text-2xl">
@@ -68,26 +68,28 @@
         </div>   
     </div>
 
-
-
-    <div class="text-right">
+    <div class="text-right self-end">
         <h1 class="font-bold">DISCLAIMER</h1>
         <p class="w-80">
-            Despite all due care, no liability can be accepted for the accuracy, completeness and up to-dateness of the information provided. The same applies to third-party websites to which www.agentur-baumeister.com refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no liability for the content of these websites.
+            Despite all due care, no liability can be accepted for the accuracy, completeness and up-to-dateness of the information provided. The same applies to third-party websites to which www.agentur-baumeister.com refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no liability for the content of these websites.
         </p>
     </div>
 </section>
 
-<section class="mt-48 flex justify-center iphone:hidden">
-    <svg width="722" height="418" viewBox="0 0 722 418" fill="none" xmlns="http://www.w3.org/2000/svg">
+<section class="mt-48 md:mt-10 hidden md:flex justify-center">
+    <svg class="w-[300px] lg:w-[722px]" height="418" viewBox="0 0 722 418" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20.5 38.5L0 220L160 388L583 418L721.5 218.5L518 0L20.5 38.5Z" fill="#E31C24"/>
     </svg>
-        
 </section>
 
 
-<section class="text-[#00672E] flex justify-between px-10 mt-20">
-    <div class="">
+
+
+
+
+<!-- Desktop footer -->
+<section class="text-imprint-green hidden lg:flex justify-between px-10 mt-20">
+    <div>
         <p>Agentur Baumeister</p>
         <p>BockhstraBe 13</p>
         <p>10967 Berlin</p>
@@ -112,3 +114,114 @@
     </div>
 </section>
 
+
+
+<!--iPad Footer -->
+<section class="text-imprint-green flex flex-col px-10 mt-20 gap-8 hidden md:block lg:hidden">
+    <div class="flex justify-between">
+        <div class="text-left">
+            <p>Agentur Baumeister</p>
+            <p>BockhstraBe 13</p>
+            <p>10967 Berlin</p>
+        </div>
+    
+        <div class="text-right">
+            <a href="" class="text-underline">hallo@agentur-baumeister.com</a>
+            <p>+49 (0)30 - 490 827 87</p>
+        </div>
+    </div>
+
+    <div class="flex justify-between text-right">
+        <div>
+            <p>Linkedln</p>
+        </div>
+    
+        <div>
+            <p>Instagram</p>
+        </div>
+    
+        <div>
+            <p>Impressum</p>
+        </div>
+    
+        <div>
+            <p>Datenschutz</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Main Section for iPhone -->
+<section class="text-imprint-green flex flex-col justify-around gap-20 px-4 block md:hidden" >
+    <div>
+        <p class="font-semibold text-xl mb-7">IMPRINT</p>
+        <div class="flex flex-col gap-20 text-2xl">
+            <div>
+                <h1 class="font-bold">Agentur Baumeister</h1>
+                <h2>Katrein Baumeister</h2>
+                <h2>BockhstraBe 13</h2>
+                <h2>10967 Berlin</h2>
+            </div>
+    
+            <div>
+                <h2>+49 (0)30 - 490 827 87</h2>
+                <h2>hallo@agentur-baumeister.com</h2>
+            </div>
+    
+            <div>
+                <h1 class="font-semibold">UST-IDNR</h1>
+                <h2>DE 274 486 923</h2>
+            </div>
+    
+            <div>
+                <h1 class="font-semibold">REGISTERED OFFICE</h1>
+                <p>Berlin, Deutschland</p>
+            </div>
+        </div>   
+    </div>
+
+
+
+    <div>
+        <h1 class="font-bold">DISCLAIMER</h1>
+        <p class="w-80">
+            Despite all due care, no liability can be accepted for the accuracy, completeness and up to-dateness of the information provided. The same applies to third-party websites to which www.agentur-baumeister.com refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no liability for the content of these websites.
+        </p>
+    </div>
+</section>
+
+
+
+<!--Footer :  For mobile sections -->
+<section class="text-imprint-green flex flex-col px-4 mt-20 gap-8 mb-4 block md:hidden">
+    <div class="flex justify-between flex-col gap-5">
+        <div>
+            <p>Agentur Baumeister</p>
+            <p>BockhstraBe 13</p>
+            <p>10967 Berlin</p>
+        </div>
+    
+        <div>
+            <a href="" class="text-underline">hallo@agentur-baumeister.com</a>
+            <p>+49 (0)30 - 490 827 87</p>
+        </div>
+    </div>
+
+    <div class="flex justify-between text-right">
+        <div>
+            <p>Linkedln</p>
+        </div>
+    
+        <div>
+            <p>Instagram</p>
+        </div>
+    
+        <div>
+            <p>Impressum</p>
+        </div>
+    
+        <div>
+            <p>Datenschutz</p>
+        </div>
+    </div>
+</section>

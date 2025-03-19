@@ -7,8 +7,13 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'iphone': {'max':'430px'}, 
+        'iphone': {'max':'430px'},
+        'ipad':'831px',
+        'galaxy':'800px'
       },
+      colors: {
+        'imprint-green':'#00672E'
+      }
     },
   },
   plugins: [],

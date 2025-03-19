@@ -480,8 +480,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mr-20 {
   margin-right: 5rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -508,8 +516,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.w-\[\] {
+  width: ;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[722px\] {
+  width: 722px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .flex-col {
@@ -552,13 +576,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 5rem;
 }
 
-.gap-y-8 {
-  row-gap: 2rem;
+.gap-8 {
+  gap: 2rem;
 }
 
-.gap-x-20 {
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-4 {
@@ -587,6 +618,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-right {
@@ -621,7 +656,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.text-\[\#00672E\] {
+.text-imprint-green {
   --tw-text-opacity: 1;
   color: rgb(0 103 46 / var(--tw-text-opacity));
 }
@@ -640,11 +675,71 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:mr-20 {
     margin-right: 5rem;
   }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:w-\[722px\] {
+    width: 722px;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:mr-36 {
     margin-right: 9rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-\[722px\] {
+    width: 722px;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[322px\] {
+    width: 322px;
+  }
+
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:px-8 {
@@ -658,37 +753,103 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .lg\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .lg\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .lg\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .lg\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .lg\:mx-7 {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+  }
+
   .lg\:mr-36 {
     margin-right: 9rem;
+  }
+
+  .lg\:-mt-9 {
+    margin-top: -2.25rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
     display: flex;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-\[722px\] {
+    width: 722px;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-col {
     flex-direction: column;
+  }
+
+  .lg\:place-items-center {
+    place-items: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-0 {
     gap: 0px;
   }
 
-  .lg\:gap-y-10 {
-    row-gap: 2.5rem;
+  .lg\:p-0 {
+    padding: 0px;
   }
 
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -696,10 +857,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:mr-36 {
     margin-right: 9rem;
   }
+
+  .xl\:w-\[722px\] {
+    width: 722px;
+  }
 }
 
 @media (max-width: 430px) {
   .iphone\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 831px) {
+  .ipad\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .ipad\:hidden {
+    display: none;
+  }
+
+  .ipad\:w-\[300px\] {
+    width: 300px;
+  }
+}
+
+@media (min-width: 800px) {
+  .galaxy\:hidden {
     display: none;
   }
 }
