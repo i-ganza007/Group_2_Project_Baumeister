@@ -4,7 +4,9 @@ module.exports = {
     "./src/**/*.html" // If you have multiple HTML files inside a 'src' folder
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
   },
   plugins: [],
 };
