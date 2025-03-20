@@ -566,36 +566,40 @@ video {
   position: relative;
 }
 
-.-left-20 {
-  left: -5rem;
+.-left-\[0\%\] {
+  left: -0%;
 }
 
-.-right-20 {
-  right: -5rem;
+.-right-\[0rem\] {
+  right: -0rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.bottom-\[16\%\] {
+  bottom: 16%;
 }
 
-.bottom-\[5\%\] {
-  bottom: 5%;
+.bottom-\[30\%\] {
+  bottom: 30%;
 }
 
-.left-1\/2 {
-  left: 50%;
+.bottom-\[6\%\] {
+  bottom: 6%;
 }
 
-.left-\[18\%\] {
-  left: 18%;
+.left-\[20\%\] {
+  left: 20%;
+}
+
+.left-\[3\%\] {
+  left: 3%;
 }
 
 .left-\[37\%\] {
   left: 37%;
 }
 
-.left-\[5\%\] {
-  left: 5%;
+.left-\[47\.9\%\] {
+  left: 47.9%;
 }
 
 .left-\[8\%\] {
@@ -741,36 +745,36 @@ video {
   height: 100%;
 }
 
-.w-\[236px\] {
-  width: 236px;
+.w-\[167\.56px\] {
+  width: 167.56px;
 }
 
-.w-\[406px\] {
-  width: 406px;
+.w-\[216\.27px\] {
+  width: 216.27px;
 }
 
-.w-\[489px\] {
-  width: 489px;
+.w-\[262px\] {
+  width: 262px;
 }
 
-.w-\[524px\] {
-  width: 524px;
+.w-\[267px\] {
+  width: 267px;
 }
 
-.w-\[704px\] {
-  width: 704px;
+.w-\[297\.78px\] {
+  width: 297.78px;
 }
 
-.w-\[721\.5px\] {
-  width: 721.5px;
-}
-
-.w-\[726px\] {
-  width: 726px;
+.w-\[299\.63px\] {
+  width: 299.63px;
 }
 
 .w-\[90px\] {
   width: 90px;
+}
+
+.w-\[97\.4px\] {
+  width: 97.4px;
 }
 
 .w-full {
@@ -972,6 +976,10 @@ video {
   .sm\:mr-20 {
     margin-right: 5rem;
   }
+
+  .sm\:mt-\[-20px\] {
+    margin-top: -20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1108,6 +1116,62 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-left-\[4\.2\%\] {
+    left: -4.2%;
+  }
+
+  .lg\:-right-\[2\.5rem\] {
+    right: -2.5rem;
+  }
+
+  .lg\:bottom-\[11\.6\%\] {
+    bottom: 11.6%;
+  }
+
+  .lg\:left-\[17\%\] {
+    left: 17%;
+  }
+
+  .lg\:left-\[9\.5\%\] {
+    left: 9.5%;
+  }
+
+  .lg\:right-40 {
+    right: 10rem;
+  }
+
+  .lg\:right-\[11\%\] {
+    right: 11%;
+  }
+
+  .lg\:top-\[10\.5\%\] {
+    top: 10.5%;
+  }
+
+  .lg\:top-\[15\%\] {
+    top: 15%;
+  }
+
+  .lg\:top-\[23\%\] {
+    top: 23%;
+  }
+
+  .lg\:top-\[13\%\] {
+    top: 13%;
+  }
+
+  .lg\:left-\[37\%\] {
+    left: 37%;
+  }
+
+  .lg\:z-50 {
+    z-index: 50;
+  }
+
+  .lg\:z-\[15\] {
+    z-index: 15;
+  }
+
   .lg\:mr-36 {
     margin-right: 9rem;
   }
@@ -1166,8 +1230,17 @@ video {
     padding-bottom: 2.5rem;
   }
 
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .lg\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .lg\:text-\[48px\] {
+    font-size: 48px;
   }
 
   .lg\:text-sm {
