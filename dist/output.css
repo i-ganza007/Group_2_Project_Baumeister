@@ -668,6 +668,10 @@ video {
   margin-top: -20px;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .flex {
   display: flex;
 }
@@ -867,6 +871,10 @@ video {
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pt-9 {
+  padding-top: 2.25rem;
 }
 
 .text-center {
@@ -1140,8 +1148,29 @@ video {
     line-height: 2rem;
   }
 
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .lg\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .lg\:text-\[22px\] {
+    font-size: 22px;
+  }
+
   .lg\:font-semibold {
     font-weight: 600;
+  }
+
+  .lg\:text-\[\] {
+    color: ;
   }
 }
 
