@@ -1118,8 +1118,8 @@ video {
     width: 634.95px;
   }
 
-  .md\:max-w-\[80\%\] {
-    max-width: 80%;
+  .md\:w-\[634\.95px\] {
+    width: 634.95px;
   }
 
   .md\:grid-rows-2 {
