@@ -558,10 +558,6 @@ video {
   visibility: visible;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -618,6 +614,10 @@ video {
   right: 6.5%;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .top-\[15\%\] {
   top: 15%;
 }
@@ -636,42 +636,6 @@ video {
 
 .top-\[49\.5\%\] {
   top: 49.5%;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.left-3 {
-  left: 0.75rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
-.bottom-4 {
-  bottom: 1rem;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.right-6 {
-  right: 1.5rem;
-}
-
-.top-4 {
-  top: 1rem;
 }
 
 .z-\[10\] {
@@ -703,10 +667,6 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mb-28 {
-  margin-bottom: 7rem;
-}
-
 .mb-64 {
   margin-bottom: 16rem;
 }
@@ -721,10 +681,6 @@ video {
 
 .mr-20 {
   margin-right: 5rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .mt-16 {
@@ -800,36 +756,12 @@ video {
   height: 80vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-\[800px\] {
-  height: 800px;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[00px\] {
-  height: 00px;
-}
-
-.h-\[780px\] {
-  height: 780px;
-}
-
-.h-\[78s0px\] {
-  height: 78s0px;
-}
-
 .h-\[980px\] {
   height: 980px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-\[167\.56px\] {
@@ -933,10 +865,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
 }
 
 .bg-\[\#EFECEA\] {
@@ -1350,10 +1278,6 @@ video {
     margin-top: -2.25rem;
   }
 
-  .lg\:mb-40 {
-    margin-bottom: 10rem;
-  }
-
   .lg\:mr-36 {
     margin-right: 9rem;
   }
@@ -1410,12 +1334,12 @@ video {
     width: 50%;
   }
 
-  .lg\:w-\[218px\] {
-    width: 218px;
-  }
-
   .lg\:w-\[236px\] {
     width: 236px;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
   }
 
   .lg\:w-\[406px\] {
@@ -1440,14 +1364,6 @@ video {
 
   .lg\:w-\[726px\] {
     width: 726px;
-  }
-
-  .lg\:w-\[px\] {
-    width: px;
-  }
-
-  .lg\:w-\[300px\] {
-    width: 300px;
   }
 
   .lg\:grid-cols-2 {
@@ -1509,8 +1425,8 @@ video {
     padding-bottom: 3rem;
   }
 
-  .lg\:text-\[22px\] {
-    font-size: 22px;
+  .lg\:text-\[23px\] {
+    font-size: 23px;
   }
 
   .lg\:text-\[26px\] {
