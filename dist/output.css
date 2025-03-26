@@ -558,6 +558,10 @@ video {
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -632,6 +636,42 @@ video {
 
 .top-\[49\.5\%\] {
   top: 49.5%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-4 {
+  top: 1rem;
 }
 
 .z-\[10\] {
@@ -764,6 +804,34 @@ video {
   height: 100%;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[00px\] {
+  height: 00px;
+}
+
+.h-\[780px\] {
+  height: 780px;
+}
+
+.h-\[78s0px\] {
+  height: 78s0px;
+}
+
+.h-\[980px\] {
+  height: 980px;
+}
+
 .w-\[167\.56px\] {
   width: 167.56px;
 }
@@ -865,6 +933,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .bg-\[\#EFECEA\] {
@@ -1368,6 +1440,14 @@ video {
 
   .lg\:w-\[726px\] {
     width: 726px;
+  }
+
+  .lg\:w-\[px\] {
+    width: px;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
   }
 
   .lg\:grid-cols-2 {
