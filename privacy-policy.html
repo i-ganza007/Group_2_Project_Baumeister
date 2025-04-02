@@ -12,24 +12,7 @@
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Privacy Policy</title>
   </head>
-  <script>
-    const loadComponents = (id, url) => {
-      fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById(id).innerHTML = html;
-        });
-    };
 
-    window.onload = () => {
-      loadComponents('header', 'src/sections/header.html');
-      //   loadComponents('yellow-section', 'src/sections/yellow_section.html');
-      //   loadComponents('paragraph', 'src/sections/paragraph.html');
-      //   loadComponents('hero', 'src/sections/hero.html');
-      //   loadComponents('footer', 'src/sections/contactsfooter.html');
-      //   loadComponents('services', 'src/sections/services.html');
-    };
-  </script>
   <body style="font-family: 'Outfit'" class="bg-gray text-primary">
     <div
       class="pt-10 flex px-4 py-4 justify-between items-center bg-[#EFECEA] md:pt-4 md:px-8"
