@@ -558,6 +558,10 @@ video {
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1193,8 +1197,8 @@ video {
     left: -4.2%;
   }
 
-  .lg\:-right-\[2\.5rem\] {
-    right: -2.5rem;
+  .lg\:-right-\[\.9rem\] {
+    right: -.9rem;
   }
 
   .lg\:bottom-\[11\.6\%\] {
@@ -1235,34 +1239,6 @@ video {
 
   .lg\:top-\[23\%\] {
     top: 23%;
-  }
-
-  .lg\:-right-\[0rem\] {
-    right: -0rem;
-  }
-
-  .lg\:right-\[2\.5rem\] {
-    right: 2.5rem;
-  }
-
-  .lg\:-right-\[2rem\] {
-    right: -2rem;
-  }
-
-  .lg\:-right-\[4rem\] {
-    right: -4rem;
-  }
-
-  .lg\:-right-\[1rem\] {
-    right: -1rem;
-  }
-
-  .lg\:-right-\[\.8rem\] {
-    right: -.8rem;
-  }
-
-  .lg\:-right-\[\.9rem\] {
-    right: -.9rem;
   }
 
   .lg\:z-50 {
@@ -1308,6 +1284,14 @@ video {
 
   .lg\:mr-36 {
     margin-right: 9rem;
+  }
+
+  .lg\:mt-\[10px\] {
+    margin-top: 10px;
+  }
+
+  .lg\:mt-\[20px\] {
+    margin-top: 20px;
   }
 
   .lg\:block {
@@ -1468,6 +1452,11 @@ video {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 }
 
