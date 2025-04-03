@@ -1,4 +1,4 @@
-1. Fix scrolling on home page --> Roside
+1. Fix scrolling on home page --> Rosine
 2. Fix green thingie, and reduce the text for services section --> Eldrige
 3. Make hero section sticky --> Vincent
 4. Add white text for the hero section on desktop --> Vincent
