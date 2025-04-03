@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imprint Page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../dist/output.css" />
+  </head>
+  <body style="font-family: 'Outfit'" class="bg-gray">
   </head>
   <body style="font-family: 'Outfit'" class="bg-gray">
     <section>
@@ -18,8 +23,8 @@
         <div
           class="lg:text-sm flex flex-col items-start justify-center h-full mb-7"
         >
-          <p>DE</p>
-          <p>EN</p>
+          <p><a href="../../index.html"> DE </a></p>
+          <p><a href="../../index.html"> EN </a></p>
         </div>
         <div class="">
           <h1 class="font-bold text-3xl">Baumeister</h1>
@@ -200,7 +205,45 @@
           accepts no liability for the content of these websites.
         </p>
       </div>
+      <div>
+        <p class="font-semibold text-base">IMPRINT</p>
+        <div class="flex flex-col gap-20 text-2xl">
+          <div>
+            <h1 class="font-bold">Agentur Baumeister</h1>
+            <h2>Katrein Baumeister</h2>
+            <h2>BockhstraBe 13</h2>
+            <h2>10967 Berlin</h2>
+          </div>
+
+          <div>
+            <h2>+49 (0)30 - 490 827 87</h2>
+            <h2>hallo@agentur-baumeister.com</h2>
+          </div>
+
+          <div>
+            <h1 class="font-semibold">UST-IDNR</h1>
+            <h2>DE 274 486 923</h2>
+          </div>
+
+          <div>
+            <h1 class="font-semibold">REGISTERED OFFICE</h1>
+            <p>Berlin, Deutschland</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-right self-end">
+        <h1 class="font-bold">DISCLAIMER</h1>
+        <p class="w-80">
+          Despite all due care, no liability can be accepted for the accuracy,
+          completeness and up-to-dateness of the information provided. The same
+          applies to third-party websites to which www.agentur-baumeister.com
+          refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister
+          accepts no liability for the content of these websites.
+        </p>
+      </div>
     </section>
+
 
     <section class="mt-48 md:mt-10 hidden md:flex justify-center">
       <svg
@@ -215,7 +258,20 @@
           fill="#E31C24"
         />
       </svg>
+      <svg
+        class="w-[300px] lg:w-[722px]"
+        height="418"
+        viewBox="0 0 722 418"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M20.5 38.5L0 220L160 388L583 418L721.5 218.5L518 0L20.5 38.5Z"
+          fill="#E31C24"
+        />
+      </svg>
     </section>
+
 
     <!-- Desktop footer -->
     <section
@@ -235,18 +291,19 @@
       </div>
 
       <div>
-        <a href="https://linkedin.com/">Linkedln</a>
+        <a href="#">Linkedln</a>
       </div>
 
       <div>
-        <a href="https://instagram.com/">Instagram</a>
+        <a>Instagram</a>
       </div>
 
       <div>
         <p>Impressum</p>
-        <p>Datenschutz</p>
+        <a href="./privacy-policy.html">Datenschutz</a>
       </div>
     </section>
+
 
     <!--iPad Footer -->
     <section
@@ -279,10 +336,11 @@
         </div>
 
         <div>
-          <a href="#">Datenschutz</a>
+          <a href="./privacy-policy.html">Datenschutz</a>
         </div>
       </div>
     </section>
+
 
     <!-- Main Section for iPhone -->
     <section
@@ -325,7 +383,48 @@
           accepts no liability for the content of these websites.
         </p>
       </div>
+    <section
+      class="text-imprint-green flex flex-col justify-around gap-20 px-4 block md:hidden"
+    >
+      <div>
+        <p class="font-semibold text-xl mb-7">IMPRINT</p>
+        <div class="flex flex-col gap-20 text-2xl">
+          <div>
+            <h1 class="font-bold">Agentur Baumeister</h1>
+            <h2>Katrein Baumeister</h2>
+            <h2>BockhstraBe 13</h2>
+            <h2>10967 Berlin</h2>
+          </div>
+
+          <div>
+            <h2>+49 (0)30 - 490 827 87</h2>
+            <h2>hallo@agentur-baumeister.com</h2>
+          </div>
+
+          <div>
+            <h1 class="font-semibold">UST-IDNR</h1>
+            <h2>DE 274 486 923</h2>
+          </div>
+
+          <div>
+            <h1 class="font-semibold">REGISTERED OFFICE</h1>
+            <p>Berlin, Deutschland</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="font-bold">DISCLAIMER</h1>
+        <p class="w-80">
+          Despite all due care, no liability can be accepted for the accuracy,
+          completeness and up to-dateness of the information provided. The same
+          applies to third-party websites to which www.agentur-baumeister.com
+          refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister
+          accepts no liability for the content of these websites.
+        </p>
+      </div>
     </section>
+
 
     <!--Footer :  For mobile sections -->
     <section
@@ -358,9 +457,11 @@
         </div>
 
         <div>
-          <a href="#">Datenschutz</a>
+          <a href="./privacy-policy.html">Datenschutz</a>
         </div>
       </div>
     </section>
   </body>
+  </body>
 </html>
+
