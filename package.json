@@ -1,8 +1,10 @@
 {
-  "dependencies": {
-    "tailwindcss": "^3.0.24"
-  },
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
-  }
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
