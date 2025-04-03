@@ -18,8 +18,71 @@
         .then((response) => response.text())
         .then((html) => {
           document.getElementById(id).innerHTML = html;
-        });
+
+          // If this is the header component, initialize menu functionality
+          if (id === "header") {
+            initializeMenu();
+          }
+        })
+        .catch((error) =>
+          console.error(`Failed to load ${id} component:`, error)
+        );
     };
+
+    // Initialize menu functionality after header is loaded
+    function initializeMenu() {
+      const openMenu = document.querySelector("#hamburger-menu");
+      const closeMenu = document.querySelector("#hamburger-menu-close");
+      const menuLinks = document.querySelector("#menu-links");
+
+      // Add click event listeners if elements exist
+      if (openMenu) {
+        openMenu.addEventListener("click", function () {
+          console.log("Open menu clicked");
+          if (menuLinks) {
+            // Show menu
+            openMenu.classList.add("hidden");
+            closeMenu.classList.remove("hidden");
+            menuLinks.classList.remove("hidden");
+            menuLinks.classList.add("flex");
+            document.body.style.overflow = "hidden";
+            console.log("Menu opened");
+          }
+        });
+      }
+
+      if (closeMenu) {
+        closeMenu.addEventListener("click", function () {
+          console.log("Close menu clicked");
+          if (menuLinks) {
+            // Hide menu
+            openMenu.classList.remove("hidden");
+            closeMenu.classList.add("hidden");
+            menuLinks.classList.add("hidden");
+            menuLinks.classList.remove("flex");
+            document.body.style.overflow = "";
+            console.log("Menu closed");
+          }
+        });
+      }
+
+      // Add click event listeners to menu links
+      if (menuLinks) {
+        const menuLinkElements = menuLinks.querySelectorAll("a");
+        menuLinkElements.forEach((link) => {
+          link.addEventListener("click", function () {
+            console.log("Menu link clicked");
+            // Hide menu
+            openMenu.classList.remove("hidden");
+            closeMenu.classList.add("hidden");
+            menuLinks.classList.add("hidden");
+            menuLinks.classList.remove("flex");
+            document.body.style.overflow = "";
+            console.log("Menu closed after link click");
+          });
+        });
+      }
+    }
 
     window.onload = () => {
       loadComponents('header', 'src/sections/header.html');
@@ -32,6 +95,36 @@
   </script>
   <body style="font-family: 'Outfit'" class="bg-gray">
     <div id="header"></div>
+    <!-- Mobile Menu - Added directly to index.html -->
+    <div
+      class="fixed w-full z-[999] hidden flex-col justify-center items-center"
+      id="menu-links"
+    >
+      <ul class="flex flex-col items-center gap-6 md:gap-12">
+        <li>
+          <a href="#paragraph" class="text-[#00672E] font-semibold text-3xl"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#services" class="text-[#00672E] font-semibold text-3xl"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#yellow-section"
+            class="text-[#00672E] font-semibold text-3xl"
+            >References</a
+          >
+        </li>
+        <li>
+          <a href="#footer" class="text-[#00672E] font-semibold text-3xl"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
     <div id="hero"></div>
     <div id="yellow-section"></div>
     <div id="contact"></div>
