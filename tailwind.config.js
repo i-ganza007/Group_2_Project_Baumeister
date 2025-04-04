@@ -1,5 +1,9 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    './index.html', // If you have a single index.html
+    './src/**/*.html', // If you have multiple HTML files inside a 'src' folder
+    '*.html', // If you have multiple HTML files in the root folder
+  ],
   theme: {
     extend: {
       colors: {
@@ -9,6 +13,7 @@ module.exports = {
           100: "#E2E2D5",
           200: "#888883",
         },
+        primary: '#00672E',
       },
       screens: {
         iphone: { max: "430px" },
@@ -19,3 +24,4 @@ module.exports = {
   },
   plugins: [],
 };
+
